@@ -1,4 +1,4 @@
-const api = "../Product.json";
+const api = "../data/Product.json";
 
 fetch(api)
   .then((response) => response.json())
@@ -21,7 +21,7 @@ bg-white/20 outline-3 outline-gray-300">
       ${product.kategori}
     </p>
 
-    <a href="../view/detail-products.html?id=${product.id}" class="font-bold mt-2 block hover:underline">
+    <a href="../view/detail.html?id=${product.id}" class="font-bold mt-2 block hover:underline">
       ${product.nama_barang}
     </a>
 

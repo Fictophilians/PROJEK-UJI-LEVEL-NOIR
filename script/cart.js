@@ -4,10 +4,10 @@ function getApiPath() {
   const path = window.location.pathname;
 
   if (path.includes("/view/")) {
-    return "../Product.json";
+    return "../data/Product.json";
   }
 
-  return "./Product.json";
+  return "../data/Product.json";
 }
 
 function getCart() {
