@@ -1,0 +1,214 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "nama_barang": "Noir Signature Oversized Tee",
+      "gambar_barang": "../Product/Black-shirt.png",
+      "harga_barang": 150000,
+      "stock_barang": 25,
+      "deskripsi_barang": "Kaos oversized dengan bahan katun combed 24s yang tebal namun tetap adem. Cocok untuk gaya streetwear. Dirancang untuk penggemar fashion streetwear modern, kaos ini memiliki potongan oversized yang memberi kesan santai namun tetap stylish. Jahitannya dibuat rapi dan kuat sehingga nyaman dipakai untuk aktivitas harian, nongkrong, atau dipadukan dengan celana cargo maupun jeans favorit.",
+      "kategori": "Short shirt",
+      "rating": 4.5
+    },
+    {
+      "id": 2,
+      "nama_barang": "Essential White T-Shirt",
+      "gambar_barang": "../Product/White-shirt.png",
+      "harga_barang": 120000,
+      "stock_barang": 50,
+      "deskripsi_barang": "Kaos polos basic dengan potongan regular fit. Bahan sangat lembut dan menyerap keringat. Desain minimalisnya menjadikan kaos ini item wajib dalam lemari pakaian. Sangat fleksibel dipadukan dengan berbagai outfit, mulai dari gaya kasual sederhana hingga dijadikan inner untuk hoodie atau jaket agar tampilan terlihat lebih bersih dan modern.",
+      "kategori": "Short shirt",
+      "rating": 4.2
+    },
+    {
+      "id": 3,
+      "nama_barang": "Classic Flannel Red Checkered",
+      "gambar_barang": "../Product/Red-flannel.png",
+      "harga_barang": 225000,
+      "stock_barang": 15,
+      "deskripsi_barang": "Kemeja flanel motif kotak-kotak klasik berwarna merah hitam. Bahan wool-blend yang hangat. Kemeja flanel ini menghadirkan nuansa klasik yang tidak lekang oleh waktu dengan kombinasi warna merah dan hitam yang ikonik. Cocok digunakan saat cuaca dingin maupun dijadikan outer untuk menciptakan gaya vintage dan maskulin.",
+      "kategori": "Casual shirt",
+      "rating": 4.7
+    },
+    {
+      "id": 4,
+      "nama_barang": "Linen Summer Shirt Sky Blue",
+      "gambar_barang": "../Product/Blue-summer.png",
+      "harga_barang": 275000,
+      "stock_barang": 10,
+      "deskripsi_barang": "Kemeja bahan linen premium yang sangat ringan dan nyaman untuk cuaca panas atau liburan ke pantai. Warna biru langit yang lembut memberikan kesan segar dan elegan, sangat cocok dipakai saat musim panas atau perjalanan santai. Potongan longgarnya juga membantu sirkulasi udara agar pengguna tetap nyaman sepanjang hari.",
+      "kategori": "Casual shirt",
+      "rating": 4.3
+    },
+    {
+      "id": 5,
+      "nama_barang": "Midnight Black Zipper Hoodie",
+      "gambar_barang": "../Product/Black-hoodie.png",
+      "harga_barang": 350000,
+      "stock_barang": 20,
+      "deskripsi_barang": "Hoodie tebal dengan bahan fleece berkualitas tinggi. Dilengkapi kantong kangguru dan tali serut. Tampil dengan nuansa hitam yang simpel namun berkarakter, hoodie ini cocok digunakan kapan saja. Desain zipper membuatnya praktis dipakai sebagai outer untuk melengkapi gaya kasual, terutama saat cuaca dingin atau berkendara malam hari.",
+      "kategori": "Hoodie",
+      "rating": 4.6
+    },
+    {
+      "id": 6,
+      "nama_barang": "White Heather Zip-Up Hoodie",
+      "gambar_barang": "../Product/White-hoodie.png",
+      "harga_barang": 375000,
+      "stock_barang": 12,
+      "deskripsi_barang": "Hoodie dengan ritsleting depan. Mudah dipadupadankan untuk tampilan layer harian. Hoodie ini menawarkan tampilan bersih dan modern dengan warna putih heather yang elegan. Sangat cocok dipadukan dengan kaos polos maupun outfit berlapis lainnya untuk menciptakan tampilan santai yang tetap fashionable.",
+      "kategori": "Hoodie",
+      "rating": 4.4
+    },
+    {
+      "id": 7,
+      "nama_barang": "Slim Fit Chino Pants Khaki",
+      "gambar_barang": "../Product/Chino-pants.png",
+      "harga_barang": 299000,
+      "stock_barang": 30,
+      "deskripsi_barang": "Celana chino dengan potongan slim fit yang memberikan kesan rapi namun tetap kasual. Celana chino ini dirancang agar terlihat rapi tanpa mengurangi kenyamanan pengguna. Sangat cocok digunakan untuk kegiatan semi formal, kampus, hingga acara santai karena tampilannya mudah dipadukan dengan berbagai jenis atasan.",
+      "kategori": "Pants",
+      "rating": 4.1
+    },
+    {
+      "id": 8,
+      "nama_barang": "Loose Denim Jeans Stone Wash",
+      "gambar_barang": "../Product/Loose.png",
+      "harga_barang": 450000,
+      "stock_barang": 18,
+      "deskripsi_barang": "Celana denim dengan potongan lebar (loose) yang memberikan kesan vintage 90-an. Mengusung gaya retro khas era 90-an, celana ini memberikan tampilan vintage yang sedang tren. Efek stone wash pada bahan denim menciptakan karakter unik sehingga cocok dipadukan dengan kaos oversized atau hoodie.",
+      "kategori": "Pants",
+      "rating": 4.0
+    },
+    {
+      "id": 9,
+      "nama_barang": "Maverick Bomber Jacket Olive",
+      "gambar_barang": "../Product/Green-jacket.png",
+      "harga_barang": 550000,
+      "stock_barang": 8,
+      "deskripsi_barang": "Jaket bomber dengan lapisan dalam satin. Tahan angin dan stylish untuk berkendara. Jaket bomber ini memberikan kesan maskulin dan modern berkat warna olive yang elegan. Selain fungsional untuk melindungi dari angin, desainnya juga cocok digunakan untuk menunjang gaya berkendara maupun aktivitas luar ruangan.",
+      "kategori": "Jacket",
+      "rating": 4.5
+    },
+    {
+      "id": 10,
+      "nama_barang": "Urban Windbreaker Navy",
+      "gambar_barang": "../Product/Navy-jacket.png",
+      "harga_barang": 425000,
+      "stock_barang": 15,
+      "deskripsi_barang": "Jaket ringan anti air (waterproof) yang cocok untuk aktivitas outdoor atau olahraga. Memiliki desain ringan dan praktis, jaket ini cocok dibawa saat bepergian atau aktivitas outdoor. Materialnya dirancang agar nyaman dipakai tanpa terasa berat, sehingga mendukung mobilitas pengguna sepanjang hari.",
+      "kategori": "Jacket",
+      "rating": 4.2
+    },
+    {
+      "id": 11,
+      "nama_barang": "Graphic Tee 'Digital Nomad'",
+      "gambar_barang": "../Product/Digital-shirt.png",
+      "harga_barang": 165000,
+      "stock_barang": 40,
+      "deskripsi_barang": "Kaos dengan desain grafis sablon plastisol yang tahan lama dan tidak mudah retak. Kaos ini menghadirkan desain grafis modern yang menggambarkan gaya hidup kreatif dan dinamis. Sangat cocok untuk anak muda yang ingin mengekspresikan karakter serta tampil lebih standout dalam keseharian.",
+      "kategori": "Shirt",
+      "rating": 4.5
+    },
+    {
+      "id": 12,
+      "nama_barang": "Striped Oxford Casual Shirt",
+      "gambar_barang": "../Product/Striped-shirt.png",
+      "harga_barang": 310000,
+      "stock_barang": 22,
+      "deskripsi_barang": "Kemeja oxford motif garis tipis biru putih. Sangat cocok untuk tampilan smart casual. Perpaduan motif garis tipis dengan bahan oxford membuat kemeja ini tampil elegan namun tetap santai. Cocok digunakan untuk acara formal ringan, kuliah, maupun hangout dengan tampilan smart casual yang rapi.",
+      "kategori": "Casual shirt",
+      "rating": 4.7
+    },
+    {
+      "id": 13,
+      "nama_barang": "Vintage Wash Hoodie Charcoal",
+      "gambar_barang": "../Product/Charcoal-hoodie.png",
+      "harga_barang": 390000,
+      "stock_barang": 14,
+      "deskripsi_barang": "Hoodie dengan efek pudar (washed) memberikan kesan grunge dan unik. ",
+      "kategori": "Hoodie",
+      "rating": 4.6
+    },
+    {
+      "id": 14,
+      "nama_barang": "Cargo Pants Military Green",
+      "gambar_barang": "../Product/Army-pants.png",
+      "harga_barang": 325000,
+      "stock_barang": 25,
+      "deskripsi_barang": "Celana cargo dengan banyak saku fungsional. Bahan katun twill yang kuat. Efek washed pada hoodie ini menghadirkan kesan vintage yang unik dan berbeda dari hoodie biasa. Cocok untuk pecinta gaya grunge atau outfit dengan nuansa retro yang lebih berkarakter.",
+      "kategori": "Pants",
+      "rating": 4.3
+    },
+    {
+      "id": 15,
+      "nama_barang": "Denim Trucker Jacket Blue Light",
+      "gambar_barang": "../Product/Lightblue-jacket.png",
+      "harga_barang": 499000,
+      "stock_barang": 7,
+      "deskripsi_barang": "Jaket denim klasik dengan aksen pudar pada bagian siku dan kerah memberi kesan vintage. Jaket denim ini menghadirkan gaya klasik yang tidak lekang oleh waktu dengan sentuhan pudar pada bagian siku dan kerah. Cocok digunakan untuk menciptakan tampilan kasual yang tetap stylish, terutama saat dipadukan dengan kaos polos atau celana chino.",
+      "kategori": "Jacket",
+      "rating": 4.4
+    },
+    {
+      "id": 16,
+      "nama_barang": "Polo Shirt Navy Gold Edition",
+      "gambar_barang": "../Product/Goldpolo-shirt.png",
+      "harga_barang": 195000,
+      "stock_barang": 35,
+      "deskripsi_barang": "Kaos polo dengan detail bordir emas di bagian dada. Bahan pique yang berpori. Kaos polo ini memberikan kesan rapi dan elegan dengan sentuhan detail bordir emas yang mewah. Cocok dipakai untuk acara santai maupun semi formal agar tetap tampil berkelas tanpa terlihat berlebihan.",
+      "kategori": "Shirt",
+      "rating": 4.5
+    },
+    {
+      "id": 17,
+      "nama_barang": "Mandarin Collar Shirt White",
+      "gambar_barang": "../Product/Mandarincollar-shirt.png",
+      "harga_barang": 285000,
+      "stock_barang": 16,
+      "deskripsi_barang": "Kemeja tanpa kerah (sanghai) memberikan tampilan yang modern dan minimalis. Desain kerah Shanghai menghadirkan nuansa modern minimalis yang sedang populer. Cocok untuk pengguna yang ingin tampil sederhana namun tetap terlihat bersih, rapi, dan stylish. Jogger ini dirancang untuk memberikan kenyamanan maksimal dalam aktivitas sehari-hari. Desainnya yang simpel membuatnya mudah dipadukan dengan kaos, hoodie, maupun sneakers favorit.",
+      "kategori": "Casual shirt",
+      "rating": 4.2
+    },
+    {
+      "id": 18,
+      "nama_barang": "Essential Jogger Pants Black",
+      "gambar_barang": "../Product/Blackjogger-pants.png",
+      "harga_barang": 245000,
+      "stock_barang": 45,
+      "deskripsi_barang": "Celana jogger dengan karet pada bagian pergelangan kaki. Nyaman untuk santai atau olahraga ringan. Jogger ini dirancang untuk memberikan kenyamanan maksimal dalam aktivitas sehari-hari. Desainnya yang simpel membuatnya mudah dipadukan dengan kaos, hoodie, maupun sneakers favorit.",
+      "kategori": "Pants",
+      "rating": 4.4
+    },
+    {
+      "id": 19,
+      "nama_barang": "Varsity Jacket Noir Edition",
+      "gambar_barang": "../Product/Varsity-jacket.png",
+      "harga_barang": 620000,
+      "stock_barang": 5,
+      "deskripsi_barang": "Jaket varsity dengan kombinasi bahan wool dan kulit sintetis pada lengan. Jaket varsity ini memiliki desain premium yang memberikan kesan eksklusif dan fashionable. Sangat cocok untuk melengkapi gaya anak muda modern yang ingin tampil percaya diri dan standout.",
+      "kategori": "Jacket",
+      "rating": 4.8
+    },
+    {
+      "id": 20,
+      "nama_barang": "Embroidery Hoodie Forest Green",
+      "gambar_barang": "../Product/Green-hoodie.png",
+      "harga_barang": 385000,
+      "stock_barang": 11,
+      "deskripsi_barang": "Hoodie warna hijau hutan dengan detail bordir logo NOIR di bagian tengah. Warna hijau hutan dipadukan dengan detail bordir membuat hoodie ini terlihat lebih premium dan unik. Cocok digunakan sebagai outfit harian dengan tampilan santai namun tetap memiliki karakter kuat.",
+      "kategori": "Hoodie",
+      "rating": 4.5
+    },
+    {
+      "id": 21,
+      "nama_barang": "Noir Shadow Cargo Jacket",
+      "gambar_barang": "../Product/Shadow-cargo-jacket.png",
+      "harga_barang": 575000,
+      "stock_barang": 9,
+      "deskripsi_barang": "Jaket cargo premium dengan desain utilitarian modern dan banyak kantong fungsional. Dibuat menggunakan bahan canvas berkualitas tinggi yang kuat namun tetap nyaman dipakai. Memiliki nuansa warna hitam gelap khas NOIR yang memberikan kesan maskulin dan elegan. Cocok dipadukan dengan cargo pants, jeans, maupun outfit streetwear untuk tampilan yang lebih berkarakter.",
+      "kategori": "Jacket",
+      "rating": 4.7
+    }
+  ]
+}
