@@ -9,7 +9,7 @@ fetch(api)
     products.slice(0, 21).forEach((product) => {
       hasil += `
         <div class="rounded-lg overflow-hidden shadow-lg p-4 
-hover:-translate-y-2 transition-all duration-300 
+hover:scale-103 transition-all duration-300 
 bg-white/20 outline-3 outline-gray-300">
 
     <img
