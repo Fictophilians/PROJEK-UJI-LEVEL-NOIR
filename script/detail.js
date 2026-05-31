@@ -1,6 +1,6 @@
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
-const api = "../Product.json";
+const api = "../data/Product.json";
 
 fetch(api)
   .then((response) => response.json())
