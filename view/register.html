@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+    <title>Login</title>
  <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- Font Libre bodoni -->
@@ -43,203 +43,119 @@
       scroll-margin-top: 115px;
     }
   </style>
-  <body>
-    
-    <!-- Navbar -->
-    <div class="flex flex-row gap-15 px-5 pt-7 pb-5 font-semibold outline-1 sticky">
-      <a href="#" id="Logo" class="text-3xl tracking-[8px] pl-5">NOIR</a>
-      <a href="./view/product.html" class="hover:underline hover:text-gray-600 pt-1">Produk</a>
-      <a href="#blog" class="hover:underline hover:text-gray-600 pt-1">Blogs</a>
-      <a href="#tentang-kami" class="hover:underline hover:text-gray-600 pt-1">Tentang Kami</a>
-     
-       <!-- Search -->
-      <input
-          type="text"
-          placeholder="Search..."
-          class="border-opacity-30 border-black rounded-2xl pr-135 top-5 "                                                                                                          "
-        />
+  <body class="bg-[#f5f5f5]">
 
-      <a href="./view/cart.html">
-        <img
-          src="../assets/shopping-cart.png"
-           width="25px" height="25px"
-          alt="Keranjang.png"
-          class="right-23 absolute pt-2 opacity-70 hover:opacity-100 transition-opacity"
-        />
+  <div class="min-h-screen grid grid-cols-2">
+    
+    <!-- kkiri -->
+    <div class="hidden md:block">
+      <img
+        src="../assets/Footer-bg.jpg"
+        alt="Fashion"
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+    <!-- kanann -->
+    <div class="flex items-center justify-center px-10">
+      <div class="w-full max-w-md">
+
+        <!-- Logo -->
+        <a href="../index.html" id ="Logo" class="text-8xl text-center m-15 tracking-[20px]">
+          NOIR
+        </a>
+
+        <!-- Email -->
+        <div class="mb-6 mt-5">
+          <input
+            type="email"
+            placeholder="Email"
+            class="w-full border border-gray-500 rounded-2xl px-6 py-4 text-lg outline-none focus:ring-1 focus:ring-black"
+          />
+        </div>
+
+        <!-- Password -->
+        <div class="mb-3 relative">
+          <input
+            type="password"
+            placeholder="Password"
+            class="w-full border border-gray-500 rounded-2xl px-6 py-4 text-lg outline-none focus:ring-1 focus:ring-black"
+          />
+
+          <button
+            class="absolute right-5 top-1/2 -translate-y-1/2"
+          >
+            <i class="fa-solid fa-eye-slash text-gray-600"></i>
+          </button>
+        </div>
+
+        <!-- Remember & Forgot -->
+        <div class="flex justify-between items-center text-sm mb-12">
+          <label class="flex items-center gap-2">
+            <span>Remember me</span>
+            <input type="checkbox">
+          </label>
+
+          <a href="#" class="hover:underline">
+            Lupa password?
+          </a>
+        </div>
+
+        <!-- Sign Up -->
+        <button
+          class="w-full border border-gray-500 rounded-2xl py-4 text-2xl font-medium shadow-md hover:bg-gray-800 hover:text-white transition-colors duration-300"
+        >
+          Sign Up
+        </button>
+
+        <!-- Divider -->
+        <div class="flex items-center gap-4 my-12">
+          <div class="flex-1 h-px bg-gray-400"></div>
+          <span class="text-xl">Atau</span>
+          <div class="flex-1 h-px bg-gray-400"></div>
+        </div>
+
         
+        <div class="grid grid-cols-2 gap-8 mb-10">
 
-      </a>
-      <a href="">
-        <img
-          src="../assets/user (2).png"
-          width="25px" height="25px"
-          alt="Profile.png"
-          class="right-10 absolute pt-2 opacity-70 hover:opacity-100 transition-opacity"
-        />
-      </a>
-    </div>
+          <button
+            class="flex items-center justify-center gap-3 border border-gray-500 rounded-2xl py-4 shadow-md hover:bg-gray-800 hover:text-white transition-colors duration-300"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+              alt="Facebook"
+              class="w-8 h-8"
+            >
+            <span class="text-xl">Facebook</span>
+          </button>
 
+          <button
+            class="flex items-center justify-center gap-3 border border-gray-500 rounded-2xl py-4 shadow-md hover:bg-gray-800 hover:text-white transition-colors duration-300"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
+              alt="Google"
+              class="w-8 h-8"
+            >
+            <span class="text-xl">Google</span>
+          </button>
 
+        </div>
 
-
-
-     <!-- FOOTER -->
-<footer class="bg-black text-white px-12 py-16">
-
-  <div class="grid grid-cols-5 gap-16">
-
-    <div>
-
-      <h3 class="font-bold tracking-widest mb-4">
-        NOIR
-      </h3>
-
-      <div class="space-y-3 text-sm text-gray-300">
-
-        <p class="hover:text-white cursor-pointer">
-          Lokasi Toko
-        </p>
-
-        <p class="hover:text-white cursor-pointer">
-          Tentang Kami
-        </p>
-
-        <p class="hover:text-white cursor-pointer">
-          Hubungi Kami
+        <!-- Sign In -->
+        <p class="text-center">
+          Sudah punya Akun?
+          <a href="#" class="font-semibold hover:underline mb-10">
+            Sign In
+          </a>
         </p>
 
       </div>
-
-    </div>
-
-    <div>
-
-      <h3 class="font-bold tracking-widest mb-4">
-        BANTUAN
-      </h3>
-
-      <div class="space-y-3 text-sm text-gray-300">
-
-        <p>FAQ</p>
-        <p>Pembayaran</p>
-        <p>Penukaran & Pengembalian</p>
-        <p>Kebijakan & Privasi</p>
-
-      </div>
-
-    </div>
-
-    <div>
-
-      <h3 class="font-bold tracking-widest mb-4">
-        CUSTOMER
-      </h3>
-
-      <div class="space-y-3 text-sm text-gray-300">
-
-        <p>Voucher</p>
-        <p>Lacak Pesanan</p>
-
-      </div>
-
-    </div>
-
-
-    <div>
-
-      <h3 class="font-bold tracking-widest mb-4">
-        PRODUK
-      </h3>
-
-      <div class="space-y-3 text-sm text-gray-300">
-
-        <p>Sale</p>
-        <p>Koleksi Baru</p>
-        <p>Kaos</p>
-        <p>Kemeja</p>
-        <p>Celana</p>
-        <p>Aksesoris</p>
-
-      </div>
-
-    </div>
-
-
-
-    <!-- KANAN -->
-    <div>
-
-      <h1
-      id="Logo"
-      class="text-5xl tracking-[10px] mb-5">
-
-        NOIR
-
-      </h1>
-
-      <h3 class="mb-3 text-xl">
-        Follow kami
-      </h3>
-
-      <div class="flex gap-4 text-2xl mb-6">
-        <a href="#" target="_blank">
-          <img src="../assets/instagram (2).png" class="w-8 h-8 mt-1 hover:scale-110 transition">
-        </a>
-        <a href="#" target="_blank">
-          <img src="../assets/youtube.png" class="w-10 h-10 hover:scale-110 transition">
-        </a>
-        <a href="#" target="_blank">
-          <img src="../assets/twitter (2).png" class="w-10 h-10 hover:scale-110 transition">
-        </a>
-
-      </div>
-
-
-      <h3 class="text-xl mb-2">
-        Hubungi kami
-      </h3>
-
-      <p class="text-gray-400 text-sm">
-        0811-1314-6741
-      </p>
-
-      <p class="text-gray-400 text-sm border-b border-gray-700 pb-4">
-        partnership@noirstore.co.id
-      </p>
-
-
-      <h3 class="text-xl mt-5 mb-2">
-        Toko Offline kami
-      </h3>
-
-      <p class="text-xs text-gray-500">
-
-      NOIR Store Bekasi <br>
-      Ruko Grand Galaxy City...
-
-      </p>
-
     </div>
 
   </div>
 
-
-  <hr class="my-10 border-gray-700">
-
-
-  <div class="flex justify-between text-sm text-gray-400">
-
-    <p>
-      Hak Cipta © NOIR Semua hak dilindungi
-    </p>
-
-    <p>
-      NOIR © 2026
-    </p>
-
-  </div>
-
-</footer>
-    
 </body>
+
+<script src="../script/auth.js"></script>
 </html>
