@@ -54,8 +54,7 @@ function login() {
 function register() {
   const email = document.getElementById("register-email")?.value.trim();
   const password = document.getElementById("register-password")?.value;
-  const confirmPassword = document.getElementById(
-    "register-confirm-password",
+  const confirmPassword = document.getElementById("register-confirm-password",
   )?.value;
 
   if (!email || !password || !confirmPassword) {
