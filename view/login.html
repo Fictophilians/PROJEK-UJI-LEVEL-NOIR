@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- Font Libre bodoni -->
     <link
@@ -18,7 +18,7 @@
     />
     <link href="../dist/output.css" rel="stylesheet" />
     <!-- font awesome -->
-     <link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
@@ -43,120 +43,118 @@
       scroll-margin-top: 115px;
     }
   </style>
-  <body class="bg-[#f5f5f5]">
+  <body class="bg-white">
+    <div class="min-h-screen grid grid-cols-2">
+      <!-- kkiri -->
+      <div class="hidden md:block">
+        <img
+          src="../assets/Footer-bg.jpg"
+          alt="Fashion"
+          class="w-full h-full object-cover"
+        />
+      </div>
 
-  <div class="min-h-screen grid grid-cols-2">
-    
-    <!-- kkiri -->
-    <div class="hidden md:block">
-      <img
-        src="../assets/Footer-bg.jpg"
-        alt="Fashion"
-        class="w-full h-full object-cover"
-      />
-    </div>
-
-    <!-- kanann -->
-    <div class="flex items-center justify-center px-10">
-      <div class="w-full max-w-md">
-
-        <!-- Logo -->
-        <a href="../index.html" id ="Logo" class="text-8xl text-center m-15 tracking-[20px]">
-          NOIR
-        </a>
-
-        <!-- Email -->
-        <div class="mb-6 mt-5">
-          <input
-            type="email"
-            placeholder="Email"
-            class="w-full border border-gray-500 rounded-2xl px-6 py-4 text-lg outline-none focus:ring-1 focus:ring-black"
-          />
-        </div>
-
-        <!-- Password -->
-        <div class="mb-3 relative">
-          <input
-            type="password"
-            placeholder="Password"
-            class="w-full border border-gray-500 rounded-2xl px-6 py-4 text-lg outline-none focus:ring-1 focus:ring-black"
-          />
-
-          <button
-            class="absolute right-5 top-1/2 -translate-y-1/2"
+      <!-- kanann -->
+      <div class="flex items-center justify-center px-10">
+        <div class="w-full max-w-md">
+          <!-- Logo -->
+          <a
+            href="../index.html"
+            id="Logo"
+            class="text-8xl text-center m-15 tracking-[20px]"
           >
-            <i class="fa-solid fa-eye-slash text-gray-600"></i>
-          </button>
-        </div>
-
-        <!-- Remember & Forgot -->
-        <div class="flex justify-between items-center text-sm mb-12">
-          <label class="flex items-center gap-2">
-            <span>Remember me</span>
-            <input type="checkbox">
-          </label>
-
-          <a href="#" class="hover:underline">
-            Lupa password?
+            NOIR
           </a>
-        </div>
 
-        <!-- Sign In -->
-        <button
-          class="w-full border border-gray-500 rounded-2xl py-4 text-2xl font-medium shadow-md hover:bg-gray-800 hover:text-white transition-colors duration-300"
-          onclick="login()"
-        >
-          Sign in
-        </button>
+         
 
-        <!-- Divider -->
-        <div class="flex items-center gap-4 my-12">
-          <div class="flex-1 h-px bg-gray-400"></div>
-          <span class="text-xl">Atau</span>
-          <div class="flex-1 h-px bg-gray-400"></div>
-        </div>
+          <!-- Email -->
+          <div class="mb-6 mt-5">
+            <input
+              id="login-email"
+              type="email"
+              placeholder="Email"
+              class="w-full border border-gray-500 rounded-2xl px-6 py-4 text-lg outline-none focus:ring-1 focus:ring-black inset-shadow-sm "
+            />
+          </div>
 
-        
-        <div class="grid grid-cols-2 gap-8 mb-10">
+          <!-- Password -->
+          <div class="mb-3 relative">
+            <input
+              id="login-password"
+              type="password"
+              placeholder="Password"
+              class="w-full border border-gray-500 rounded-2xl px-6 py-4 text-lg outline-none focus:ring-1 focus:ring-black inset-shadow-sm"
+            />
 
+            <button class="absolute right-5 top-1/2 -translate-y-1/2">
+              <i class="fa-solid fa-eye-slash text-gray-600"></i>
+            </button>
+          </div>
+
+          <!-- Remember & Forgot -->
+          <div class="flex justify-between items-center text-sm mb-12">
+            <label class="flex items-center gap-2">
+              <span>Remember me</span>
+              <input type="checkbox" />
+            </label>
+
+            <a href="#" class="hover:underline"> Lupa password? </a>
+          </div>
+
+          <!-- Sign In -->
           <button
-            class="flex items-center justify-center gap-3 border border-gray-500 rounded-2xl py-4 shadow-md hover:bg-gray-800 hover:text-white transition-colors duration-300"
+            class="w-full border border-gray-500 rounded-2xl py-4 text-2xl font-medium shadow-md hover:bg-gray-800 hover:text-white transition-colors duration-300"
+            onclick="login()"
           >
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
-              alt="Facebook"
-              class="w-8 h-8"
-            >
-            <span class="text-xl">Facebook</span>
+            Sign in
           </button>
 
-          <button
-            class="flex items-center justify-center gap-3 border border-gray-500 rounded-2xl py-4 shadow-md hover:bg-gray-800 hover:text-white transition-colors duration-300"
-          >
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
-              alt="Google"
-              class="w-8 h-8"
+          <!-- Divider -->
+          <div class="flex items-center gap-4 my-12">
+            <div class="flex-1 h-px bg-gray-400"></div>
+            <span class="text-xl">Atau</span>
+            <div class="flex-1 h-px bg-gray-400"></div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-8 mb-10">
+            <button
+              class="flex items-center justify-center gap-3 border border-gray-500 rounded-2xl py-4 shadow-md hover:bg-gray-800 hover:text-white transition-colors duration-300"
             >
-            <span class="text-xl">Google</span>
-          </button>
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+                alt="Facebook"
+                class="w-8 h-8"
+              />
+              <span class="text-xl">Facebook</span>
+            </button>
 
+            <button
+              class="flex items-center justify-center gap-3 border border-gray-500 rounded-2xl py-4 shadow-md hover:bg-gray-800 hover:text-white transition-colors duration-300"
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
+                alt="Google"
+                class="w-8 h-8"
+              />
+              <span class="text-xl">Google</span>
+            </button>
+          </div>
+
+          <!-- Sign Up -->
+          <p class="text-center">
+            Belum punya Akun?
+            <a
+              href="./register.html"
+              class="font-semibold hover:underline mb-10"
+            >
+              Sign up
+            </a>
+          </p>
         </div>
-
-        <!-- Sign Up -->
-        <p class="text-center">
-          Belum punya Akun?
-          <a href="#" class="font-semibold hover:underline mb-10">
-            Sign up
-          </a>
-        </p>
-
       </div>
     </div>
+  </body>
 
-  </div>
-
-</body>
-
-<script src="../script/auth.js"></script>
+  <script src="../script/auth.js"></script>
 </html>
