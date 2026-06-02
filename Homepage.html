@@ -1,0 +1,424 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NOIR - Modern Shopping Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Font Libre bodoni -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Bubblegum+Sans&family=Buenard:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Open Sans -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Bubblegum+Sans&family=Buenard:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./dist/output.css" rel="stylesheet" />
+    <!-- font awesome -->
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    #Logo {
+      font-family: "Libre Bodoni", serif;
+    }
+    a {
+      font-family: "Open Sans", sans-serif;
+    }
+    p {
+      font-family: "Open Sans", sans-serif;
+    }
+    #blog {
+      scroll-margin-top: -50px;
+    }
+    #tentang-kami {
+      scroll-margin-top: 115px;
+    }
+  </style>
+  <body>
+    
+    <!-- Navbar -->
+    <div class="flex flex-row gap-15 px-5 pt-7 pb-5 font-semibold outline-1 sticky">
+      <a href="#" id="Logo" class="text-3xl tracking-[5px] pl-5">NOIR</a>
+      <a href="./view/product.html" class="hover:underline hover:text-gray-600 pt-1">Produk</a>
+      <a href="#blog" class="hover:underline hover:text-gray-600 pt-1">Blogs</a>
+      <a href="#tentang-kami" class="hover:underline hover:text-gray-600 pt-1">Tentang Kami</a>
+     
+       <!-- Search -->
+      <input
+          type="text"
+          placeholder="Search..."
+          class="border-opacity-30 border-black rounded-2xl pr-135 top-5 "                                                                                                          "
+        />
+
+      <a href="./view/cart.html">
+        <img
+          src="assets/shopping-cart.png"
+           width="25px" height="25px"
+          alt="Keranjang.png"
+          class="right-23 absolute pt-2 opacity-70 hover:opacity-100 transition-opacity"
+        />
+        
+
+      </a>
+      <a href="">
+        <img
+          src="assets/sunny icon.jpg"
+          width="30px" height="30px"
+          alt="Profile.png"
+          class="right-10 absolute pt-1  rounded-full hover:scale-120 duration-200 "
+        />
+      </a>
+    </div>
+
+    <!-- Hero Banner -->
+      <img src="assets/herobanner.png" alt="Hero Banner" class="w-300 h-140 mx-40 my-5 rounded "/>
+  
+
+     <!-- ABOUT -->
+  <section class="relative my-20 py-25 text-center" id="tentang-kami">
+
+    <h1 class="absolute text-[330px] opacity-10 font-bold tracking-[35px] inset-0" id="Logo">
+      NOIR
+    </h1>
+
+    <h2
+    id="Logo"
+    class="text-5xl mb-6 font-bold relative">
+      Hai, Kami N O I R
+    </h2>
+
+    <p class="max-w-4xl mx-auto text-2xl relative">
+
+      NOIR adalah ruang belanja modern yang mengutamakan
+      kesederhanaan, kualitas, dan rasa.
+
+      Kami percaya bahwa pengalaman berbelanja tidak harus
+      ramai untuk terasa berharga—cukup bersih,
+      terkurasi, dan tepat sasaran.
+
+    </p>
+
+  </section>
+
+
+
+  <!-- TERBARU -->
+  <section class="px-10 py-10">
+
+    <h2
+    id="Logo"
+    class="text-center text-3xl mb-12">
+
+      Terbaru di NOIR
+
+    </h2>
+
+    <div id="product-card" class="grid grid-cols-3 gap-10">
+     -
+    </div>
+
+    <div class="text-center mt-10">
+
+      <a href="./view/product.html"
+      class=" inline-block bg-black text-white px-8 py-3 rounded-xl shadow-lg hover:bg-zinc-800 hover:scale-[1.05] transition-all duration-300">
+
+      Lihat lainnya
+
+    </a>
+
+    </div>
+
+  </section>
+ 
+
+  <!-- BLOG -->
+ <section class="bg-[#101010] py-20 px-10" id="blog">
+
+  <div class="grid grid-cols-2 gap-10">
+
+    <!-- CARD 1 -->
+    <div class="bg-[#f7f3f3] rounded-2xl p-6
+                flex gap-6
+                hover:-translate-y-3
+                hover:shadow-2xl
+                transition-all duration-300">
+
+      <!-- gambar -->
+      <img
+      src="assets/Erigo_x_MPL_5.webp"
+      class="w-[300px] h-[600px] object-cover rounded-xl shrink-0">
+
+      <!-- isi -->
+      <div class="flex flex-col">
+
+        <p class="text-gray-500 text-2xl">
+          Blogs
+        </p>
+
+        <h1 class="font-black text-5xl leading-tight mt-3">
+          KOLABORASI <br>
+          NOIR X MPL <br>
+          INDONESIA
+        </h1>
+
+        <a href="#">
+        <img
+        src="assets/instagram (3).png"
+        class="w-10 mt-5 hover:scale-110 transition">
+        </a>
+
+        <p class="mt-5 text-gray-700 text-justify leading-8">
+
+         
+Ditengah hiruk pikuk persaingan dunia fashion maupun game, akhirnya tercipta kolaborasi yang mempertemukan ambisi besar dan kreativitas, menyatukan misi untuk melahirkan sesuatu yang akan menjadi perbincangan hangat.
+Noir memeriahkan bulan kemerdekaan dengan kolaborasi ekslusif bersama MPL Indonesia.
+
+        </p>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- CARD 2 -->
+    <div class="bg-[#f7f3f3] rounded-2xl p-6
+                flex gap-6
+                hover:-translate-y-3
+                hover:shadow-2xl
+                transition-all duration-300">
+
+      <img
+      src="assets/Jordan-collab.png"
+      class="w-[300px] h-[600px] object-cover rounded-xl shrink-0">
+
+
+      <div class="flex flex-col">
+
+        <p class="text-gray-500 text-2xl">
+          Blogs
+        </p>
+
+        <h1 class="font-black text-5xl leading-tight mt-3">
+          KOLABORASI <br>
+          NOIR X <br>
+          BARRETT
+        </h1>
+        <a href="#">
+        <img
+        src="assets/instagram (3).png"
+        class="w-10 mt-5 hover:scale-110 transition">
+        </a>
+        <p class="mt-5 text-gray-700 text-justify leading-8">
+
+          Noir menjalin kolaborasi eksklusif bersama Jordan Barrett untuk menghadirkan sentuhan gaya yang modern dan berkarakter. Kerja sama ini memperkuat identitas Noir sebagai brand yang terkurasi, menghadirkan perpaduan antara kesederhanaan dan ekspresi dalam setiap detail.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+  <!-- BANNER FOOTER  -->
+  <section class="relative">
+
+    <img
+    src="assets/Footer-bg.jpg"
+    class="w-full h-[500px] object-cover">
+
+    <h1
+    id="Logo"
+    class="absolute text-white text-8xl top-[40%] left-60">
+
+      ELEVATE YOUR STYLE
+
+    </h1>
+
+  </section>
+
+
+  <!-- FOOTER -->
+<footer class="bg-black text-white px-12 py-16">
+
+  <div class="grid grid-cols-5 gap-16">
+
+    <div>
+
+      <h3 class="font-bold tracking-widest mb-4">
+        NOIR
+      </h3>
+
+      <div class="space-y-3 text-sm text-gray-300">
+
+        <p class="hover:text-white cursor-pointer">
+          Lokasi Toko
+        </p>
+
+        <p class="hover:text-white cursor-pointer">
+          Tentang Kami
+        </p>
+
+        <p class="hover:text-white cursor-pointer">
+          Hubungi Kami
+        </p>
+
+      </div>
+
+    </div>
+
+    <div>
+
+      <h3 class="font-bold tracking-widest mb-4">
+        BANTUAN
+      </h3>
+
+      <div class="space-y-3 text-sm text-gray-300">
+
+        <p>FAQ</p>
+        <p>Pembayaran</p>
+        <p>Penukaran & Pengembalian</p>
+        <p>Kebijakan & Privasi</p>
+
+      </div>
+
+    </div>
+
+    <div>
+
+      <h3 class="font-bold tracking-widest mb-4">
+        CUSTOMER
+      </h3>
+
+      <div class="space-y-3 text-sm text-gray-300">
+
+        <p>Voucher</p>
+        <p>Lacak Pesanan</p>
+
+      </div>
+
+    </div>
+
+
+    <div>
+
+      <h3 class="font-bold tracking-widest mb-4">
+        PRODUK
+      </h3>
+
+      <div class="space-y-3 text-sm text-gray-300">
+
+        <p>Sale</p>
+        <p>Koleksi Baru</p>
+        <p>Kaos</p>
+        <p>Kemeja</p>
+        <p>Celana</p>
+        <p>Aksesoris</p>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- KANAN -->
+    <div>
+
+      <h1
+      id="Logo"
+      class="text-5xl tracking-[10px] mb-5">
+
+        NOIR
+
+      </h1>
+
+      <h3 class="mb-3 text-xl">
+        Follow kami
+      </h3>
+
+      <div class="flex gap-4 text-2xl mb-6">
+        <a href="#" target="_blank">
+          <img src="assets/instagram (2).png" class="w-8 h-8 mt-1 hover:scale-110 transition">
+        </a>
+        <a href="#" target="_blank">
+          <img src="assets/youtube.png" class="w-10 h-10 hover:scale-110 transition">
+        </a>
+        <a href="#" target="_blank">
+          <img src="assets/twitter (2).png" class="w-10 h-10 hover:scale-110 transition">
+        </a>
+
+      </div>
+
+
+      <h3 class="text-xl mb-2">
+        Hubungi kami
+      </h3>
+
+      <p class="text-gray-400 text-sm">
+        0811-1314-6741
+      </p>
+
+      <p class="text-gray-400 text-sm border-b border-gray-700 pb-4">
+        partnership@noirstore.co.id
+      </p>
+
+
+      <h3 class="text-xl mt-5 mb-2">
+        Toko Offline kami
+      </h3>
+
+      <p class="text-xs text-gray-500">
+
+      NOIR Store Bekasi <br>
+      Ruko Grand Galaxy City...
+
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <hr class="my-10 border-gray-700">
+
+
+  <div class="flex justify-between text-sm text-gray-400">
+
+    <p>
+      Hak Cipta © NOIR Semua hak dilindungi
+    </p>
+
+    <p>
+      NOIR © 2026
+    </p>
+
+  </div>
+
+</footer>
+
+    
+   
+
+
+
+
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="./script/products.js"></script>
+    <script src="./script/cart.js"></script>
+     
+</html>

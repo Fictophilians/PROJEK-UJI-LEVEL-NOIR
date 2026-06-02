@@ -2298,17 +2298,11 @@
   .text-gray-900 {
     color: var(--color-gray-900);
   }
-  .text-green-600 {
-    color: var(--color-green-600);
-  }
   .text-heading {
     color: var(--color-heading);
   }
   .text-red-500 {
     color: var(--color-red-500);
-  }
-  .text-red-600 {
-    color: var(--color-red-600);
   }
   .text-white {
     color: var(--color-white);
@@ -2445,6 +2439,16 @@
         --tw-scale-x: 110%;
         --tw-scale-y: 110%;
         --tw-scale-z: 110%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .hover\:scale-120 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 120%;
+        --tw-scale-y: 120%;
+        --tw-scale-z: 120%;
         scale: var(--tw-scale-x) var(--tw-scale-y);
       }
     }
