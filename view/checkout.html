@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Checkout</title>
+    <link href="../dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100">
+    <div class="max-w-6xl mx-auto py-12 px-6">
+      <h1 class="text-3xl font-bold mb-6">Checkout</h1>
+
+      <div class="grid gap-6 lg:grid-cols-[2fr,1fr]">
+        <form
+          id="checkoutForm"
+          class="space-y-4 bg-white p-6 rounded-2xl shadow"
+        >
+          <h2 class="text-xl font-semibold">Informasi Pengiriman</h2>
+
+          <div>
+            <label class="block text-sm text-gray-600">Nama lengkap</label>
+            <input
+              id="name"
+              name="name"
+              class="w-full border rounded px-4 py-3 mt-1"
+              required
+            />
+          </div>
+
+          <div>
+            <label class="block text-sm text-gray-600">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              class="w-full border rounded px-4 py-3 mt-1"
+              required
+            />
+          </div>
+
+          <div>
+            <label class="block text-sm text-gray-600">Alamat</label>
+            <textarea
+              id="address"
+              name="address"
+              class="w-full border rounded px-4 py-3 mt-1"
+              rows="3"
+              required
+            ></textarea>
+          </div>
+
+          <div>
+            <label class="block text-sm text-gray-600">Nomor Telepon</label>
+            <input
+              id="phone"
+              name="phone"
+              class="w-full border rounded px-4 py-3 mt-1"
+            />
+          </div>
+
+          <div>
+            <label class="block text-sm text-gray-600">Metode Pembayaran</label>
+            <select
+              id="payment"
+              name="payment"
+              class="w-full border rounded px-4 py-3 mt-1"
+            >
+              <option value="cod">Bayar di Tempat (COD)</option>
+              <option value="transfer">Transfer Bank</option>
+            </select>
+          </div>
+
+          <div class="flex items-center gap-3 mt-6">
+            <button
+              type="submit"
+              class="rounded-xl bg-black px-6 py-3 text-white"
+            >
+              Bayar Sekarang
+            </button>
+            <a href="cart.html" class="text-gray-600">Kembali ke Keranjang</a>
+          </div>
+        </form>
+
+        <aside class="bg-white p-6 rounded-2xl shadow" id="summary">
+          <h2 class="text-xl font-semibold mb-3">Ringkasan Pesanan</h2>
+          <div id="itemsList" class="space-y-3"></div>
+          <div class="mt-4 border-t pt-4 space-y-2 text-sm text-gray-700">
+            <div class="flex justify-between">
+              <span>Subtotal</span><span id="subtotal"></span>
+            </div>
+            <div class="flex justify-between">
+              <span>Pajak (10%)</span><span id="tax"></span>
+            </div>
+            <div class="flex justify-between">
+              <span>Pengiriman</span><span id="shipping"></span>
+            </div>
+            <div class="flex justify-between font-bold text-lg">
+              <span>Total</span><span id="total"></span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <script src="../script/cart.js"></script>
+    <script src="../script/checkout.js"></script>
+  </body>
+</html>

@@ -160,6 +160,40 @@ window.kosongkanKeranjang = function () {
   renderCartIfExists();
 };
 
+function calculateTotal(cartItems) {
+  let subtotal = 0;
+
+  for (let i = 0; i < cartItems.length; i++) {
+    const item = cartItems[i];
+    const quantity = item.quantity || 1;
+    subtotal += item.harga_barang * quantity;
+  }
+
+  const shippingCost = 25000;
+  const taxRate = 0.1;
+  const tax = subtotal * taxRate;
+  const total = subtotal + tax + shippingCost;
+
+  return {
+    subtotal: subtotal,
+    tax: tax,
+    shippingCost: shippingCost,
+    total: total,
+  };
+}
+
+window.checkout = function () {
+  const cartItems = getCart();
+
+  if (cartItems.length === 0) {
+    alert("Keranjang anda kosong! Silakan tambahkan produk terlebih dahulu.");
+    return;
+  }
+
+  // Redirect to a dedicated checkout page for a simple checkout flow
+  window.location.href = "../view/checkout.html";
+};
+
 function renderCart() {
   const container = document.getElementById("Cart");
 
@@ -180,7 +214,7 @@ function renderCart() {
       "</div>";
     return;
   }
- 
+
   let subtotal = 0;
   let itemRows = "";
 
@@ -250,7 +284,7 @@ function renderCart() {
     formatRupiah(subtotal) +
     "</span>" +
     "</div>" +
-    '<button class="mt-6 w-fit  rounded-xl bg-black px-6 py-3 text-xl text-white hover:bg-zinc-800 transition-colors duration-300">Checkout</button>' +
+    '<button onclick="checkout()" class="mt-6 w-fit rounded-xl bg-black px-6 py-3 text-xl text-white hover:bg-zinc-800 transition-colors duration-300">Checkout</button>' +
     '<button onclick="kosongkanKeranjang()" class="mt-3 w-fit flex rounded-xl border px-4 py-3 text-gray-700 hover:bg-gray-300 hover:text-gray-800 transition-colors duration-300">Kosongkan Keranjang</button>' +
     "</aside>" +
     "</div>";
