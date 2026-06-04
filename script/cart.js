@@ -180,7 +180,7 @@ function renderCart() {
       "</div>";
     return;
   }
-
+ 
   let subtotal = 0;
   let itemRows = "";
 
@@ -189,7 +189,6 @@ function renderCart() {
     const quantity = item.quantity || 1;
     const itemTotal = item.harga_barang * quantity;
     subtotal += itemTotal;
-
     itemRows +=
       "" +
       '<div class="flex flex-col gap-4 rounded-2xl bg-white p-4 shadow-lg md:flex-row md:items-center">' +
@@ -251,8 +250,8 @@ function renderCart() {
     formatRupiah(subtotal) +
     "</span>" +
     "</div>" +
-    '<button class="mt-6 w-full rounded-xl bg-black px-4 py-3 text-white hover:bg-zinc-800 transition-colors duration-300">Checkout</button>' +
-    '<button onclick="kosongkanKeranjang()" class="mt-3 w-full rounded-xl border px-4 py-3 text-gray-700 hover:bg-gray-300 hover:text-gray-800 transition-colors duration-300">Kosongkan Keranjang</button>' +
+    '<button class="mt-6 w-fit  rounded-xl bg-black px-6 py-3 text-xl text-white hover:bg-zinc-800 transition-colors duration-300">Checkout</button>' +
+    '<button onclick="kosongkanKeranjang()" class="mt-3 w-fit flex rounded-xl border px-4 py-3 text-gray-700 hover:bg-gray-300 hover:text-gray-800 transition-colors duration-300">Kosongkan Keranjang</button>' +
     "</aside>" +
     "</div>";
 }

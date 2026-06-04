@@ -21,7 +21,7 @@ fetch(api)
             <p class="text-sm text-gray-500 mt-2">Stok: ${product.stock_barang}</p>
             <button
       onclick="tambahKeranjang(${product.id})"
-      class="w-full mt-4 bg-black text-white py-3 rounded-xl shadow-lg
+      class="mt-4 bg-black text-white px-6 py-2 text-lg rounded-xl shadow-lg
       hover:bg-zinc-800 hover:scale-[1.02]
       transition-all duration-300 ">
 
@@ -42,4 +42,3 @@ fetch(api)
     document.getElementById("Detail-produk").innerHTML =
       `<p class="text-red-500">Terjadi kesalahan memuat detail produk.</p>`;
   });
-
