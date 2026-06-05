@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }).format(v);
   }
 
-  // render items
+  // render item
   itemsList.innerHTML = "";
   cartItems.forEach(function (it) {
     const div = document.createElement("div");
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
   shippingEl.textContent = formatRupiahSafe(totals.shippingCost);
   totalEl.textContent = formatRupiahSafe(totals.total);
 
-  // prefill user info if available
+  
   const user = sessionStorage.getItem("user");
   if (user) {
     try {
@@ -49,7 +49,6 @@ document.addEventListener("DOMContentLoaded", function () {
       if (u.name) document.getElementById("name").value = u.name;
       if (u.email) document.getElementById("email").value = u.email;
     } catch (e) {
-      // ignore
     }
   }
 
@@ -85,10 +84,8 @@ document.addEventListener("DOMContentLoaded", function () {
     existingOrders.push(order);
     sessionStorage.setItem("orders", JSON.stringify(existingOrders));
 
-    // clear cart
     if (typeof saveCart === "function") saveCart([]);
 
-    // redirect to confirmation
     window.location.href = "../view/confirmation.html?orderId=" + order.id;
   });
 });
