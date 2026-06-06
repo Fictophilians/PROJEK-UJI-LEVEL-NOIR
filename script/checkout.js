@@ -1,91 +1,89 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const cartItems = typeof getCart === "function" ? getCart() : [];
+const SHIPPING_COST = 25000;
+const TAX_RATE = 0.1;
 
-  if (!cartItems || cartItems.length === 0) {
-    alert("Keranjang anda kosong. Tambahkan produk terlebih dahulu.");
-    window.location.href = "../view/cart.html";
-    return;
+const $ = (id) => document.getElementById(id);
+const getFormValues = () => ({
+  name: $("name").value.trim(),
+  email: $("email").value.trim(),
+  address: $("address").value.trim(),
+  phone: $("phone").value.trim(),
+  payment: $("payment").value,
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const cart = getCart();
+
+  if (!cart.length) {
+    alert("Keranjang anda kosong!");
+    return (window.location.href = "../view/cart.html");
   }
 
-  const itemsList = document.getElementById("itemsList");
-  const subtotalEl = document.getElementById("subtotal");
-  const taxEl = document.getElementById("tax");
-  const shippingEl = document.getElementById("shipping");
-  const totalEl = document.getElementById("total");
+  const subtotal = cart.reduce(
+    (sum, item) => sum + item.harga_barang * (item.quantity || 1),
+    0,
+  );
+  const tax = subtotal * TAX_RATE;
+  const total = subtotal + tax + SHIPPING_COST;
 
-  const totals =
-    typeof calculateTotal === "function"
-      ? calculateTotal(cartItems)
-      : { subtotal: 0, tax: 0, shippingCost: 0, total: 0 };
+  // Render items
+  $("itemsList").innerHTML = cart
+    .map(
+      (item) => `
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <img src="${item.gambar_barang}" class="w-14 h-14 object-cover rounded" alt="" />
+            <div>
+              <div class="font-medium">${item.nama_barang}</div>
+              <div class="text-sm text-gray-600">x ${item.quantity || 1}</div>
+            </div>
+          </div>
+          <div class="font-semibold">${formatRupiah(item.harga_barang * (item.quantity || 1))}</div>
+        </div>
+      `,
+    )
+    .join("");
 
-  function formatRupiahSafe(v) {
-    if (typeof formatRupiah === "function") return formatRupiah(v);
-    return new Intl.NumberFormat("id-ID", {
-      style: "currency",
-      currency: "IDR",
-      maximumFractionDigits: 0,
-    }).format(v);
-  }
+  // Show totals
+  $("subtotal").textContent = formatRupiah(subtotal);
+  $("tax").textContent = formatRupiah(tax);
+  $("shipping").textContent = formatRupiah(SHIPPING_COST);
+  $("total").textContent = formatRupiah(total);
 
-  // render item
-  itemsList.innerHTML = "";
-  cartItems.forEach(function (it) {
-    const div = document.createElement("div");
-    div.className = "flex items-center justify-between";
-    div.innerHTML = `<div class="flex items-center gap-3"><img src="${it.gambar_barang}" class="w-14 h-14 object-cover rounded" alt=""/><div><div class="font-medium">${it.nama_barang}</div><div class="text-sm text-gray-600">x ${it.quantity || 1}</div></div></div><div class="font-semibold">${formatRupiahSafe((it.harga_barang || 0) * (it.quantity || 1))}</div>`;
-    itemsList.appendChild(div);
-  });
+  // Load user data
+  try {
+    const user = JSON.parse(sessionStorage.getItem("user") || "{}");
+    if (user.name) $("name").value = user.name;
+    if (user.email) $("email").value = user.email;
+  } catch {}
 
-  subtotalEl.textContent = formatRupiahSafe(totals.subtotal);
-  taxEl.textContent = formatRupiahSafe(totals.tax);
-  shippingEl.textContent = formatRupiahSafe(totals.shippingCost);
-  totalEl.textContent = formatRupiahSafe(totals.total);
-
-  
-  const user = sessionStorage.getItem("user");
-  if (user) {
-    try {
-      const u = JSON.parse(user);
-      if (u.name) document.getElementById("name").value = u.name;
-      if (u.email) document.getElementById("email").value = u.email;
-    } catch (e) {
-    }
-  }
-
-  const form = document.getElementById("checkoutForm");
-  form.addEventListener("submit", function (e) {
+  // Handle submission
+  $("checkoutForm").addEventListener("submit", (e) => {
     e.preventDefault();
-
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const address = document.getElementById("address").value.trim();
-    const phone = document.getElementById("phone").value.trim();
-    const payment = document.getElementById("payment").value;
+    const { name, email, address, phone, payment } = getFormValues();
 
     if (!name || !email || !address) {
-      alert("Lengkapi nama, email, dan alamat pengiriman.");
+      alert("Lengkapi nama, email, dan alamat!");
       return;
     }
 
     const order = {
       id: Date.now(),
-      customer: { name: name, email: email, address: address, phone: phone },
-      items: cartItems,
-      subtotal: totals.subtotal,
-      tax: totals.tax,
-      shippingCost: totals.shippingCost,
-      total: totals.total,
+      customer: { name, email, address, phone },
+      items: cart,
+      subtotal,
+      tax,
+      shippingCost: SHIPPING_COST,
+      total,
       paymentMethod: payment,
       timestamp: new Date().toISOString(),
       status: "pending",
     };
 
-    const existingOrders = JSON.parse(sessionStorage.getItem("orders") || "[]");
-    existingOrders.push(order);
-    sessionStorage.setItem("orders", JSON.stringify(existingOrders));
+    const orders = JSON.parse(sessionStorage.getItem("orders") || "[]");
+    orders.push(order);
+    sessionStorage.setItem("orders", JSON.stringify(orders));
+    saveCart([]);
 
-    if (typeof saveCart === "function") saveCart([]);
-
-    window.location.href = "../view/confirmation.html?orderId=" + order.id;
+    window.location.href = `../view/confirmation.html?orderId=${order.id}`;
   });
 });

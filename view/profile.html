@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NOIR - Modern Shopping Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- Font Libre bodoni -->
     <link
@@ -23,10 +23,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
   </head>
-
-</head>
-<body>
-      <style>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
     #Logo {
       font-family: "Libre Bodoni", serif;
     }
@@ -37,35 +37,39 @@
       font-family: "Open Sans", sans-serif;
     }
     #blog {
-      scroll-margin-top: 80px;
+      scroll-margin-top: -50px;
     }
-
-      
+    #tentang-kami {
+      scroll-margin-top: 115px;
+    }
   </style>
-   <!-- Navbar -->
+  <body>
+    
+    <!-- Navbar -->
     <div class="flex flex-row gap-15 px-5 pt-7 pb-5 font-semibold outline-1 sticky">
-      <a href="../Homepage.html" id="Logo" class="text-3xl tracking-[5px] pl-5 hover:scale-105 duration-200">NOIR</a>
+      <a href="" id="Logo" class="text-3xl tracking-[5px] pl-5 hover:scale-105 duration-200">NOIR</a>
       <a href="./product.html" class="hover:underline hover:text-gray-600 pt-1">Produk</a>
-      <a href="../index.html#blog" class="hover:underline hover:text-gray-600 pt-1">Blogs</a>
-      <a href="../index.html#tentang-kami" class="hover:underline hover:text-gray-600 pt-1">Tentang Kami</a>
+      <a href="#blog" class="hover:underline hover:text-gray-600 pt-1">Blogs</a>
+      <a href="#tentang-kami" class="hover:underline hover:text-gray-600 pt-1">Tentang Kami</a>
      
-        <input
+       <!-- Search -->
+      <input
           type="text"
           placeholder="Search..."
-          class="border-opacity-30 border-gray-500 rounded-2xl pr-135 top-5  items-center "                                                                                                          "
+          class="border-opacity-30 border-black rounded-2xl pr-135 top-5 "                                                                                                          "
         />
-      
+
       <a href="./cart.html">
         <img
           src="../assets/shopping-cart.png"
            width="25px" height="25px"
           alt="Keranjang.png"
-          class="right-23 absolute pt-2 opacity-70 hover:opacity-100 transition-opacity duration-300"
+          class="right-23 absolute pt-2 opacity-70 hover:opacity-100 transition-opacity"
         />
         
 
       </a>
-       <a href="">
+      <a href="">
         <img
           src="../assets/sunny icon.jpg"
           width="30px" height="30px"
@@ -74,20 +78,15 @@
         />
       </a>
     </div>
+    </body>
 
-
-<div id="product-card" class="grid grid-cols-3 gap-10 m-10">
-    -
-</div>
-
- <!-- FOOTER -->
-<footer class="bg-black text-white px-12 py-16">
+    <footer class="bg-black text-white px-12 py-16">
 
   <div class="grid grid-cols-5 gap-16">
 
     <div>
 
-      <h3 class="font-bold tracking-widest mb-4">
+      <h3 class="font-bold tracking-widest mb-4 ">
         NOIR
       </h3>
 
@@ -237,10 +236,3 @@
   </div>
 
 </footer>
-
-
-
-    <script src="../script/products-page.js"></script>
-    <script src="../script/cart.js"></script>
-</body>
-</html>
