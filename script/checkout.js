@@ -1,4 +1,3 @@
-const SHIPPING_COST = 25000;
 const TAX_RATE = 0.1;
 
 const $ = (id) => document.getElementById(id);
@@ -17,15 +16,15 @@ document.addEventListener("DOMContentLoaded", () => {
     alert("Keranjang anda kosong!");
     return (window.location.href = "../view/cart.html");
   }
-
+// hitung total dan pajak
   const subtotal = cart.reduce(
     (sum, item) => sum + item.harga_barang * (item.quantity || 1),
     0,
   );
   const tax = subtotal * TAX_RATE;
-  const total = subtotal + tax + SHIPPING_COST;
+  const total = subtotal + tax;
 
-  // Render items
+  
   $("itemsList").innerHTML = cart
     .map(
       (item) => `
@@ -43,10 +42,9 @@ document.addEventListener("DOMContentLoaded", () => {
     )
     .join("");
 
-  // Show totals
+  // tampilkan total
   $("subtotal").textContent = formatRupiah(subtotal);
   $("tax").textContent = formatRupiah(tax);
-  $("shipping").textContent = formatRupiah(SHIPPING_COST);
   $("total").textContent = formatRupiah(total);
 
   // Load user data
@@ -56,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (user.email) $("email").value = user.email;
   } catch {}
 
-  // Handle submission
+  //  submission
   $("checkoutForm").addEventListener("submit", (e) => {
     e.preventDefault();
     const { name, email, address, phone, payment } = getFormValues();
@@ -72,7 +70,6 @@ document.addEventListener("DOMContentLoaded", () => {
       items: cart,
       subtotal,
       tax,
-      shippingCost: SHIPPING_COST,
       total,
       paymentMethod: payment,
       timestamp: new Date().toISOString(),

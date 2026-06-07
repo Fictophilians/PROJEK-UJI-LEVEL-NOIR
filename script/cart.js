@@ -122,7 +122,7 @@ function renderCart() {
           </div>
           <div class="text-right">
             <p class="font-semibold">${formatRupiah(item.harga_barang * (item.quantity || 1))}</p>
-            <button onclick="hapusProduk(${item.id})" class="mt-2 text-sm text-red-500">Hapus</button>
+            <button onclick="hapusProduk(${item.id})" class="mt-2 text-sm text-red-500 hover:underline">Hapus</button>
           </div>
         </div>
       `,
