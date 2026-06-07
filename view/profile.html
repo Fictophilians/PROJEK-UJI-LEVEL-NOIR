@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -43,12 +43,11 @@
       scroll-margin-top: 115px;
     }
   </style>
-  <body>
-    
+  <body class="bg-gray-100 text-gray-900">
     <!-- Navbar -->
     <div class="flex flex-row gap-15 px-5 pt-7 pb-5 font-semibold outline-1 sticky">
-      <a href="" id="Logo" class="text-3xl tracking-[5px] pl-5 hover:scale-105 duration-200">NOIR</a>
-      <a href="./product.html" class="hover:underline hover:text-gray-600 pt-1">Produk</a>
+      <a href="../Homepage.html" id="Logo" class="text-3xl tracking-[5px] pl-5 hover:scale-105 duration-200">NOIR</a>
+      <a href="./view/product.html" class="hover:underline hover:text-gray-600 pt-1">Produk</a>
       <a href="#blog" class="hover:underline hover:text-gray-600 pt-1">Blogs</a>
       <a href="#tentang-kami" class="hover:underline hover:text-gray-600 pt-1">Tentang Kami</a>
      
@@ -59,7 +58,7 @@
           class="border-opacity-30 border-black rounded-2xl pr-135 top-5 "                                                                                                          "
         />
 
-      <a href="./cart.html">
+      <a href="./view/cart.html">
         <img
           src="../assets/shopping-cart.png"
            width="25px" height="25px"
@@ -69,7 +68,7 @@
         
 
       </a>
-      <a href="">
+      <a href="./view/profile.html">
         <img
           src="../assets/sunny icon.jpg"
           width="30px" height="30px"
@@ -78,15 +77,79 @@
         />
       </a>
     </div>
-    </body>
 
-    <footer class="bg-black text-white px-12 py-16">
+    <main class="mx-auto max-w-6xl px-6 py-10">
+      <section class="mb-10 rounded-3xl bg-white p-8 shadow-sm">
+        <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+          <div>
+            <p class="text-sm uppercase tracking-[8px] text-gray-500">Akun Saya</p>
+            <h1 class="mt-3 text-4xl font-bold">Profil Pengguna</h1>
+            <p class="mt-3 max-w-2xl text-sm text-gray-600">Kelola detail akun Anda dan lihat ringkasan informasi dengan cepat.</p>
+          </div>
+          <a href="product.html" class="inline-flex items-center justify-center rounded-full bg-black px-6 py-3 text-sm font-semibold text-white transition hover:bg-zinc-800">Lanjutkan Belanja</a>
+        </div>
+      </section>
+
+      <div class="grid gap-6 xl:grid-cols-[1.4fr,0.9fr]">
+        <section class="space-y-6 rounded-3xl bg-white p-8 shadow-sm">
+          <div class="flex items-center gap-5">
+            <div class="grid h-20 w-20 place-items-center rounded-full bg-gray-200 text-3xl font-bold text-gray-700"><img src="../assets/sunny icon.jpg" alt="profile-picture" class="rounded-full hover:scale-110 duration-200"></div>
+            <div>
+              <h2 class="text-2xl font-semibold">Adi Setio Nugroho</h2>
+              <p class="mt-1 text-sm text-gray-500">adisetionugroho@email.com</p>
+            </div>
+          </div>
+
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div class="rounded-[2rem] border border-gray-200 bg-gray-50 p-5">
+              <p class="text-xs uppercase tracking-[0.3em] text-gray-500">Telepon</p>
+              <p class="mt-3 text-lg font-semibold">0812-3456-7890</p>
+            </div>
+            <div class="rounded-[2rem] border border-gray-200 bg-gray-50 p-5">
+              <p class="text-xs uppercase tracking-[0.3em] text-gray-500">Alamat</p>
+              <p class="mt-3 text-lg font-semibold">Jl. Mawar No. 12, Bekasi</p>
+            </div>
+          </div>
+
+          <div class="rounded-[2rem] border border-gray-200 bg-gray-50 p-6">
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <p class="text-sm text-gray-500">Bergabung sejak</p>
+                <p class="mt-2 text-lg font-semibold">Januari 2025</p>
+              </div>
+              <a href="#" class="text-sm font-semibold text-black hover:underline">Edit Profil</a>
+            </div>
+          </div>
+        </section>
+
+        <aside class="rounded-3xl bg-white p-8 shadow-sm">
+          <h2 class="text-xl font-semibold">Ringkasan Akun</h2>
+          <div class="mt-6 space-y-4 text-sm text-gray-600">
+            <div class="rounded-[2rem] border border-gray-200 bg-gray-50 p-4">
+              <p class="text-gray-500">Pesanan terakhir</p>
+              <p class="mt-2 text-lg font-semibold">#20260501</p>
+            </div>
+            <div class="rounded-[2rem] border border-gray-200 bg-gray-50 p-4">
+              <p class="text-gray-500">Pesanan selesai</p>
+              <p class="mt-2 text-lg font-semibold">8</p>
+            </div>
+            <div class="rounded-[2rem] border border-gray-200 bg-gray-50 p-4">
+              <p class="text-gray-500">Voucher aktif</p>
+              <p class="mt-2 text-lg font-semibold">3</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+     <!-- FOOTER -->
+<footer class="bg-black text-white px-12 py-16">
 
   <div class="grid grid-cols-5 gap-16">
 
     <div>
 
-      <h3 class="font-bold tracking-widest mb-4 ">
+      <h3 class="font-bold tracking-widest mb-4">
         NOIR
       </h3>
 
@@ -236,3 +299,5 @@
   </div>
 
 </footer>
+  </body>
+</html>
