@@ -142,7 +142,7 @@ function renderCart() {
           <span>Subtotal</span>
           <span>${formatRupiah(subtotal)}</span>
         </div>
-        <button onclick="checkout()" class="mt-6 w-fit rounded-xl bg-black px-6 py-3 text-xl text-white hover:bg-zinc-700 transition-colors duration-300">
+        <button onclick="checkout()" class="mt-6 w-fit rounded-xl bg-black px-6 py-3 text-xl text-white hover:bg-zinc-600 transition-colors duration-300">
           Checkout
         </button>
         <button onclick="kosongkanKeranjang()" class="mt-3 w-fit flex rounded-xl border px-4 py-3 text-gray-700 hover:bg-gray-300 hover:text-gray-800 transition-colors duration-300">
