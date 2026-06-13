@@ -2388,10 +2388,6 @@
     --tw-tracking: 0.3em;
     letter-spacing: 0.3em;
   }
-  .tracking-\[5px\] {
-    --tw-tracking: 5px;
-    letter-spacing: 5px;
-  }
   .tracking-\[8px\] {
     --tw-tracking: 8px;
     letter-spacing: 8px;
@@ -2407,10 +2403,6 @@
   .tracking-\[35px\] {
     --tw-tracking: 35px;
     letter-spacing: 35px;
-  }
-  .tracking-\[px\] {
-    --tw-tracking: px;
-    letter-spacing: px;
   }
   .tracking-widest {
     --tw-tracking: var(--tracking-widest);
@@ -2705,6 +2697,20 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-white);
+      }
+    }
+  }
+  .hover\:bg-zinc-600 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-zinc-600);
+      }
+    }
+  }
+  .hover\:bg-zinc-700 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-zinc-700);
       }
     }
   }
