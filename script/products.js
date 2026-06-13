@@ -28,18 +28,6 @@ bg-white/20 outline-3 outline-gray-300">
     <p class="text-red-500 font-semibold mt-2">
       Rp ${product.harga_barang.toLocaleString("id-ID")}
     </p>
-
-
-    <button
-      onclick="tambahKeranjang(${product.id})"
-      class="w-full mt-4 bg-black text-white py-3 rounded-xl shadow-lg
-      hover:bg-zinc-800 hover:scale-[1.02]
-      transition-all duration-300 ">
-
-      + Tambah ke Keranjang
-
-    </button>
-
 </div>
       `;
     });
