@@ -955,6 +955,9 @@
   .my-5 {
     margin-block: calc(var(--spacing) * 5);
   }
+  .my-7 {
+    margin-block: calc(var(--spacing) * 7);
+  }
   .my-10 {
     margin-block: calc(var(--spacing) * 10);
   }
@@ -1281,11 +1284,17 @@
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
+  .mb-7 {
+    margin-bottom: calc(var(--spacing) * 7);
+  }
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
   }
   .mb-12 {
     margin-bottom: calc(var(--spacing) * 12);
+  }
+  .mb-16 {
+    margin-bottom: calc(var(--spacing) * 16);
   }
   .apexcharts-xaxistooltip {
     .apexcharts-canvas & {
@@ -2384,21 +2393,9 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
-  .tracking-\[0\.3em\] {
-    --tw-tracking: 0.3em;
-    letter-spacing: 0.3em;
-  }
-  .tracking-\[3\] {
-    --tw-tracking: 3;
-    letter-spacing: 3;
-  }
   .tracking-\[3px\] {
     --tw-tracking: 3px;
     letter-spacing: 3px;
-  }
-  .tracking-\[5px\] {
-    --tw-tracking: 5px;
-    letter-spacing: 5px;
   }
   .tracking-\[8px\] {
     --tw-tracking: 8px;
@@ -2473,6 +2470,9 @@
   }
   .text-gray-700 {
     color: var(--color-gray-700);
+  }
+  .text-gray-800 {
+    color: var(--color-gray-800);
   }
   .text-gray-900 {
     color: var(--color-gray-900);
@@ -2592,16 +2592,6 @@
       @media (hover: hover) {
         --tw-translate-y: calc(var(--spacing) * -3);
         translate: var(--tw-translate-x) var(--tw-translate-y);
-      }
-    }
-  }
-  .hover\:scale-102 {
-    &:hover {
-      @media (hover: hover) {
-        --tw-scale-x: 102%;
-        --tw-scale-y: 102%;
-        --tw-scale-z: 102%;
-        scale: var(--tw-scale-x) var(--tw-scale-y);
       }
     }
   }
@@ -2729,17 +2719,26 @@
       }
     }
   }
-  .hover\:bg-zinc-700 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-zinc-700);
-      }
-    }
-  }
   .hover\:bg-zinc-800 {
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-zinc-800);
+      }
+    }
+  }
+  .hover\:tracking-normal {
+    &:hover {
+      @media (hover: hover) {
+        --tw-tracking: var(--tracking-normal);
+        letter-spacing: var(--tracking-normal);
+      }
+    }
+  }
+  .hover\:tracking-tight {
+    &:hover {
+      @media (hover: hover) {
+        --tw-tracking: var(--tracking-tight);
+        letter-spacing: var(--tracking-tight);
       }
     }
   }
