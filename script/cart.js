@@ -2,8 +2,7 @@ const STORAGE_KEY = "cart";
 const API_PATH = "../data/Product.json";
 
 const getCart = () => JSON.parse(sessionStorage.getItem(STORAGE_KEY) || "[]");
-const saveCart = (cart) =>
-  sessionStorage.setItem(STORAGE_KEY, JSON.stringify(cart));
+const saveCart = (cart) => sessionStorage.setItem(STORAGE_KEY, JSON.stringify(cart));
 const refresh = () => typeof renderCart === "function" && renderCart();
 
 const formatRupiah = (value) =>

@@ -36,6 +36,9 @@ const renderConfirmation = () => {
     return;
   }
 
+  const tax = order.tax || 0;
+  const subtotal = order.subtotal || 0;
+
   confirmation.innerHTML = `
     <h2 class="text-2xl font-bold mb-2">Terima kasih! Pesanan Anda diterima.</h2>
     <p class="text-sm text-gray-600 mb-4">ID Pesanan: <strong>${order.id}</strong></p>
@@ -45,8 +48,14 @@ const renderConfirmation = () => {
     </div>
     <div class="bg-gray-50 rounded p-4 mb-4">
       ${orderItems}
-      <div class="flex justify-between font-semibold text-lg mt-3">
-        Total:<span>${money(order.total)}</span>
+      <div class="flex justify-between text-lg mt-3 pb-2 border-b">
+        <span>Subtotal:</span><span>${money(subtotal)}</span>
+      </div>
+      <div class="flex justify-between text-lg py-2 border-b">
+        <span>Pajak 10%:</span><span>${money(tax)}</span>
+      </div>
+      <div class="flex justify-between font-semibold text-lg mt-3 pt-2">
+        Total sesudah pajak:<span>${money(order.total)}</span>  
       </div>
     </div>
     <a href="../Homepage.html" class="rounded-xl bg-black px-6 py-3 text-white inline-block hover:bg-zinc-800 transition-colors duration-300">Kembali ke Beranda</a>
