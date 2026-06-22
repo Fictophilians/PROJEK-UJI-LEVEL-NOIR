@@ -55,7 +55,7 @@ const renderConfirmation = () => {
         <span>Pajak 10%:</span><span>${money(tax)}</span>
       </div>
       <div class="flex justify-between font-semibold text-lg mt-3 pt-2">
-        Total sesudah pajak:<span>${money(order.total)}</span>  
+        Total:<span>${money(order.total)}</span>  
       </div>
     </div>
     <a href="../Homepage.html" class="rounded-xl bg-black px-6 py-3 text-white inline-block hover:bg-zinc-800 transition-colors duration-300">Kembali ke Beranda</a>
